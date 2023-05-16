@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VideosFlix</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #000000;
+      color: #fb0000;
+      margin: 0;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Estilize cada vídeo */
+    .video {
+      position: relative;
+      padding-bottom: 56.25%; /* Proporção 16:9 para vídeos do YouTube */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>VideosFlix</h1>
+
+  <div class="video-container">
+    <div class="video">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/aWcJsiI1p5g" title="Filme de ação dublado  AVATAR 1  Melhor Filme lançamento 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/MTwVLD7Caeg" title="Auto da compadecida em HD sem cortes (vídeo restaurado)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe width="802" height="441" src="https://www.youtube.com/embed/jBvq7V61gwk" title="CAÇA AS BRUXAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/0QNt0jm_otw" title="El Chanfle - 1978 (Legendado)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
